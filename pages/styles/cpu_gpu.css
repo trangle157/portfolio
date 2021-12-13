@@ -1,0 +1,9 @@
+button.dataviz {
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 10px;
+}
+
