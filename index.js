@@ -5,7 +5,6 @@ const flowerPetalRight = document.querySelector("#flower-petal-right")
 const flowerButton = document.querySelector("#lotus")
 
 const menu = document.querySelector(".main-items")
-//console.log(flowerButton)
 
 flowerButton.addEventListener('click', () => {
     const openStatus = flowerButton.classList.toggle("open")
@@ -29,9 +28,7 @@ const docBody = document.querySelector('body')
 
 dayLightButton.addEventListener('change', () => {
     if (dayLightButton.checked) {
-        console.log("yay")
         docBody.classList.toggle("night")
-        console.log(docBody.classList)
     } else {
         docBody.classList.toggle("night")
     }

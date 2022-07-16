@@ -1,0 +1,24 @@
+{
+  "name": "trang.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trangeriale/trang.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trangeriale/trang.io/issues"
+  },
+  "homepage": "https://github.com/trangeriale/trang.io#readme",
+  "dependencies": {
+    "@microsoft/atlas-css": "^3.17.0",
+    "@microsoft/atlas-js": "^1.1.1"
+  }
+}

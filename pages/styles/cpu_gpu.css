@@ -7,3 +7,44 @@ button.dataviz {
     border-radius: 10px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3em;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 60%;
+}
+
+h2 {
+    /*padding: 0px;*/
+    /*line-height: 98%;*/
+    margin: 0;
+    padding: 0 2em;
+}
+
+.drop-down-icon {
+    width: 1em;
+}
+
+@media all and (max-width: 768px) {
+    article {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        width: 80%;
+    }
+}

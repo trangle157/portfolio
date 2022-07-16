@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang's Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Trang's project - CPU Visualization</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="styles/cpu_gpu.css">
+    <link rel="stylesheet" href="styles/pages.css">
     <link rel="stylesheet" href="https://use.typekit.net/dxs1dwy.css">
     <link rel="stylesheet" href="https://unpkg.com/browse/@microsoft/atlas-css/">
 </head>
 
 <body>
-    <img id="banner" src="assets/header_smol.png">
-
+    <a href="../index.html">
+        <img class="top-logo" src="../assets/Trang_Pilogo.png">
+    </a>
     <input type="checkbox" id="day-night-switch">
     <label for="day-night-switch" class="day-night-switch"></label>
-
     <nav class="nav-bar">
         <button class="menu-bttn">
             <svg id="menu-bttn-flower" width="50px" height="50px" viewBox="0 0 20 20"
@@ -48,34 +50,49 @@
             <li class="page-title"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
-    <!-- Project grids -->
+    <button class="dataviz" disabled>dataviz</button>
     <main>
-        <a href="pages/work-at-microsoft.html">
-            <section class="project-card" id="work-at-microsoft">
-                <img src="assets/code-redemption.png">
-            </section>
-        </a>
-        <a href="pages/cpu-gpu.html">
-            <section class="project-card" id="cpugpu">
-                <img src="assets/final_viz_pc.png">
-            </section>
-        </a>
-        <section class="project-card" id="ltn-map">
-            <img src="assets/mainscreen-ltn.png">
-        </section>
-        <section class="project-card">
-            <img src="assets/hover-drawing-app.png">
-        </section>
-        <section class="project-card"></section>
+        <h1 class="font-size-sm">Visualization of PC Builds</h1>
+        <article id="exec-summary">
+            <h2 class="section-name">
+                Executive Summary
+            </h2>
+            <p>
+                To all PC builders out there, from a novice one (like myself) to one with color-coordinated cooler fans,
+                My goal is to help you find and compare prices and performance that best fit your needs.
+            </p>
+        </article>
+        <br>
+        <article>
+            <label for="">
+                <h2>Inspiration</h2>
+            </label>
+            <input type="checkbox" class="collapsible-section-name">
+            <div class="text-dropdown">
+
+            </div>
+            <p>
+                Prior to the graphic cards' price race, I was determined to build a PC to play Valorant (ended up
+                playing Overcooked) and went on several sites to choose a combination between different
+                parts and prices. The multitude of prices, models, brands, and tech specs of hardwares that you are
+                unfamiliar with, can be quite
+                overwhelming. With my growing interest in applying UX principles to data visualization,
+                I start to work on visualizing computer performance data,
+                Choosing and combining computer parts can be a challenge when it comes to pricing, models and use
+                purpose.
+                The PC build visualizer
+            </p>
+        </article>
+        <br />
+        <article>
+            <h2>Goal</h2>
+            <p>
+                In their
+            </p>
+        </article>
     </main>
-
-    <footer>
-        Copyright &copy; Trang Le <time id="date-time-footer"></time>
-    </footer>
-
-    <script src="index.js"></script>
+    <footer>Copyright &copy; Trang Le <time id="date-time-footer"></time> </footer>
+    <script src="../index.js"></script>
 </body>
-
 
 </html>

@@ -12,6 +12,10 @@ body {
     font-family: soleil, sans-serif;
 }
 
+footer {
+    color: var(--body-text);
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -28,7 +32,7 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
+    color: var(--body-text);
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -48,7 +52,7 @@ section.project-card {
     object-fit: cover;
 }
 
-a, 
+a,
 a:visited {
     text-decoration: none;
     color: var(--header-text);
@@ -56,7 +60,7 @@ a:visited {
 
 body.night {
     background-color: #2E292B;
-    --lotus-color: rgb(255, 232,249, 0.8);
+    --lotus-color: rgb(255, 232, 249, 0.8);
     --line-stroke: #FFF2FC;
     --header-text: white;
     --body-text: white;
@@ -80,6 +84,7 @@ label.day-night-switch {
     transition: all 500ms ease;
 }
 
+
 @media screen and (max-width: 300px) and (orientation:portrait) {
     label.day-night-switch {
         width: 2.5em;
@@ -102,7 +107,7 @@ label.day-night-switch:after {
     border-radius: 50%;
 }
 
-input:checked + label {
+input:checked+label {
     background-color: var(--wisteria-purple);
     justify-content: flex-end;
 }
@@ -171,6 +176,7 @@ g#lotus path {
     .menu-bttn {
         display: none;
     }
+
     .main-items,
     .main-items.open {
         /*width: 50vw;*/

@@ -5,18 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang's Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Work at Microsoft</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="styles/cpu_gpu.css">
     <link rel="stylesheet" href="https://use.typekit.net/dxs1dwy.css">
-    <link rel="stylesheet" href="https://unpkg.com/browse/@microsoft/atlas-css/">
 </head>
 
 <body>
-    <img id="banner" src="assets/header_smol.png">
-
     <input type="checkbox" id="day-night-switch">
     <label for="day-night-switch" class="day-night-switch"></label>
-
     <nav class="nav-bar">
         <button class="menu-bttn">
             <svg id="menu-bttn-flower" width="50px" height="50px" viewBox="0 0 20 20"
@@ -34,7 +31,8 @@
                         </path>
                     </g>
                     <g id="flower-petal-right">
-                        <path d="M 10 4 C 4 6, 4 16, 10 18" stroke-width="0.45px" transform="rotate(20, 10, 18)"></path>
+                        <path d="M 10 4 C 4 6, 4 16, 10 18" stroke-width="0.45px" transform="rotate(20, 10, 18)">
+                        </path>
                         <path d="M 10 4 C 16 6, 16 16, 10 18" stroke-width="0.3px" transform="rotate(20, 10, 18)">
                         </path>
                     </g>
@@ -48,34 +46,20 @@
             <li class="page-title"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
-    <!-- Project grids -->
+    <button class="dataviz">dataviz</button>
     <main>
-        <a href="pages/work-at-microsoft.html">
-            <section class="project-card" id="work-at-microsoft">
-                <img src="assets/code-redemption.png">
-            </section>
-        </a>
-        <a href="pages/cpu-gpu.html">
-            <section class="project-card" id="cpugpu">
-                <img src="assets/final_viz_pc.png">
-            </section>
-        </a>
-        <section class="project-card" id="ltn-map">
-            <img src="assets/mainscreen-ltn.png">
-        </section>
-        <section class="project-card">
-            <img src="assets/hover-drawing-app.png">
-        </section>
-        <section class="project-card"></section>
+        <h1>Microsoft Docs</h1>
+        <article id="exec-summary">
+            <h2>
+
+            </h2>
+            <p>
+
+            </p>
+        </article>
     </main>
-
-    <footer>
-        Copyright &copy; Trang Le <time id="date-time-footer"></time>
-    </footer>
-
-    <script src="index.js"></script>
+    <footer>Copyright &copy; Trang Le <time id="date-time-footer"></time> </footer>
+    <script src="../index.js"></script>
 </body>
-
 
 </html>
