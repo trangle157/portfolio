@@ -53,35 +53,39 @@
     <button class="dataviz" disabled>dataviz</button>
     <main>
         <h1 class="font-size-sm">Visualization of PC Builds</h1>
-        <article id="exec-summary">
+        <article>
             <h2 class="section-name">
                 Executive Summary
             </h2>
-            <p>
-                To all PC builders out there, from a novice one (like myself) to one with color-coordinated cooler fans,
-                My goal is to help you find and compare prices and performance that best fit your needs.
-            </p>
+            <div class="section">
+                <p>
+                    Building a PC was a fun and nerve-wracking experience (especially when mounting that CPU onto the
+                    thermal paste). After considering parts through exhaustive lists and reading tech documents, I
+                    realized
+                    it's a real adventure from choosing the right parts to balancing budget and purpose, and if there is
+                    any
+                    &lt;insert esoteric technical terms&gt; problems that come with combining the parts.
+                </p>
+            </div>
         </article>
         <br>
         <article>
-            <label for="">
-                <h2>Inspiration</h2>
-            </label>
-            <input type="checkbox" class="collapsible-section-name">
-            <div class="text-dropdown">
-
+            <div class="dropdown-control">
+                <label for="dropdown-checkbox">
+                    <h2 class="section-name">Inspiration</h2>
+                </label>
+                <input type="checkbox" id="dropdown-checkbox">
             </div>
-            <p>
-                Prior to the graphic cards' price race, I was determined to build a PC to play Valorant (ended up
-                playing Overcooked) and went on several sites to choose a combination between different
-                parts and prices. The multitude of prices, models, brands, and tech specs of hardwares that you are
-                unfamiliar with, can be quite
-                overwhelming. With my growing interest in applying UX principles to data visualization,
-                I start to work on visualizing computer performance data,
-                Choosing and combining computer parts can be a challenge when it comes to pricing, models and use
-                purpose.
-                The PC build visualizer
-            </p>
+            <div class="dropdown section">
+                <p>
+                    Prior to the graphic cards' price race, I was determined to build a PC to play Valorant (ended up
+                    playing Overcooked) and went on several sites to choose a combination between different
+                    parts and prices. Choosing and combining computer parts can be a challenge when it comes to pricing,
+                    models and use purpose can be quite overwhelming. With my growing interest in applying UX principles
+                    to data visualization, I start to work on visualizing computer performance data,
+                    The PC build visualizer
+                </p>
+            </div>
         </article>
         <br />
         <article>
