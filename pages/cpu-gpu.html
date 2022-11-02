@@ -44,58 +44,65 @@
             </svg>
         </button>
         <ul class="main-items">
-            <li class="page-title"><a href="" style="color: #E98ECF">UX</a></li>
+            <li class="page-title"><a href="../index.html" style="color: #E98ECF">UX</a></li>
             <li class="page-title"><a href="pages/art.html">Art</a></li>
             <li class="page-title"><a href="about.html">About</a></li>
             <li class="page-title"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <button class="dataviz" disabled>dataviz</button>
     <main>
-        <h1 class="font-size-sm">Visualization of PC Builds</h1>
+        <h1 class="font-size-sm">PC Component Visualization</h1>
         <article>
-            <h2 class="section-name">
-                Executive Summary
-            </h2>
+            <h2 class="section-name">Executive Summary</h2>
             <div class="section">
                 <p>
-                    Building a PC was a fun and nerve-wracking experience (especially when mounting that CPU onto the
-                    thermal paste). After considering parts through exhaustive lists and reading tech documents, I
-                    realized
-                    it's a real adventure from choosing the right parts to balancing budget and purpose, and if there is
-                    any
-                    &lt;insert esoteric technical terms&gt; problems that come with combining the parts.
+                    Choosing the right components for your PC could be overwhelming and exciting. This PC build
+                    visualizer aims to help PC builders of different experiences, budget, and use case, to find the best
+                    combination that fits their needs and if an upgrade in parts is worthy of the budget increase.
+                </p>
+                <br>
+                <p>
+                    The feature that is most challenging to the visualization is presenting a large amount of data in
+                    visually acceptable scales and reduce cognitive load for comparison and contrast.
                 </p>
             </div>
         </article>
         <br>
         <article>
-            <div class="dropdown-control">
-                <label for="dropdown-checkbox">
-                    <h2 class="section-name">Inspiration</h2>
-                </label>
-                <input type="checkbox" id="dropdown-checkbox">
-            </div>
-            <div class="dropdown section">
+            <h2 class="section-name">Inspiration</h2>
+            <div class="section" hidden>
                 <p>
-                    Prior to the graphic cards' price race, I was determined to build a PC to play Valorant (ended up
-                    playing Overcooked) and went on several sites to choose a combination between different
-                    parts and prices. Choosing and combining computer parts can be a challenge when it comes to pricing,
-                    models and use purpose can be quite overwhelming. With my growing interest in applying UX principles
-                    to data visualization, I start to work on visualizing computer performance data,
-                    The PC build visualizer
+                    Interested in building a PC in 2020, I looked for parts and components and opened multiple tabs at
+                    the same time reading up on tech articles, motherboard compatibility, and price. The process
+                    was more than rewarding seeing your PC turned on for the first time and seeing the BIOS screen
+                    showing up, feeling as if you have brought some thing to life.
+                </p>
+                <br>
+                <p>
+                    While studying UX design at UC Berkeley Extension, I was particularly curious about data
+                    visualization and (color) accessibility, after incidentally falling in love with Math for for years
+                    in college. Having the PC build experience fresh in my gear, I decided to do a data visualization
+                    piece using the data I scraped from UserBenchmark.com.
                 </p>
             </div>
+            <details class="section">
+                <summary>
+                    <span>Read more</span>
+                </summary>
+                While studying UX design at UC Berkeley Extension, I was particularly curious about data
+                visualization and (color) accessibility, after incidentally falling in love with Math for for years
+                in college. Having the PC build experience fresh in my gear, I decided to do a data visualization
+                piece using the data I scraped from UserBenchmark.com.
+            </details>
         </article>
-        <br />
+        <br>
         <article>
-            <h2>Goal</h2>
-            <p>
-                In their
-            </p>
+            <h2 class="section-name">Users</h2>
+            <p>UserBenchmark.com</p>
         </article>
+        <br>
     </main>
-    <footer>Copyright &copy; Trang Le <time id="date-time-footer"></time> </footer>
+    <footer>Copyright &copy; Trang Le <time id="date-time-footer"></time></footer>
     <script src="../index.js"></script>
 </body>
 

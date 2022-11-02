@@ -5,13 +5,9 @@
     top: 0em;
 }
 
-h2.section-name {
-    width: 100%;
+.section-name {
+    width: 30%;
     overflow-wrap: break-word;
-}
-
-.dropdown-control .section-name {
-    width: 100%;
 }
 
 main {
@@ -21,16 +17,19 @@ main {
     padding-bottom: 3em;
 }
 
-h2 {
-    margin: 0;
-    padding: 0 2em;
-}
-
 article {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 60%;
+}
+
+article.expandable>details {
+    width: 100%;
+}
+
+summary {
+    flex-direction: row;
 }
 
 .section {
@@ -52,6 +51,10 @@ input[type=checkbox]:checked+.dropdown {
     display: none;
 }
 
+h2 {
+    margin: 0;
+}
+
 @media all and (max-width: 900px) {
     article {
         flex-direction: column;
@@ -61,6 +64,14 @@ input[type=checkbox]:checked+.dropdown {
     .section-name {
         width: 100%;
         text-align: center;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    h2 {
+        margin: 1.4rem 0;
     }
 
     p {

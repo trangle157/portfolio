@@ -12,6 +12,11 @@ body {
     font-family: soleil, sans-serif;
 }
 
+.font-size-h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 footer {
     color: var(--body-text);
 }
@@ -52,7 +57,7 @@ section.project-card {
     object-fit: cover;
 }
 
-a,
+.page-title>a,
 a:visited {
     text-decoration: none;
     color: var(--header-text);

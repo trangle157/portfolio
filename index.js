@@ -24,13 +24,18 @@ flowerButton.addEventListener('click', () => {
 
 /* dark mode */
 const dayLightButton = document.querySelector('#day-night-switch');
-const docBody = document.querySelector('body')
+const docBody = document.querySelector('body');
+
+if (dayLightButton.checked) {
+    //dayLightButton.classList.add('night');
+    docBody.classList.add('night');
+}
 
 dayLightButton.addEventListener('change', () => {
     if (dayLightButton.checked) {
-        docBody.classList.toggle("night")
+        docBody.classList.add('night');
     } else {
-        docBody.classList.toggle("night")
+        docBody.classList.remove('night');
     }
 })
 
