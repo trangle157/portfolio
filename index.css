@@ -19,6 +19,8 @@ body {
 
 footer {
     color: var(--body-text);
+    font-size: 1rem;
+    padding-block: 2rem;
 }
 
 @keyframes fadeInAnimation {
@@ -57,10 +59,13 @@ section.project-card {
     object-fit: cover;
 }
 
-.page-title>a,
-a:visited {
+.page-title>a {
     text-decoration: none;
     color: var(--header-text);
+}
+
+a {
+    color: var(--wisteria-purple);
 }
 
 body.night {
@@ -89,6 +94,10 @@ label.day-night-switch {
     transition: all 500ms ease;
 }
 
+#github-top {
+    width: 30%;
+    margin-bottom: 2rem;
+}
 
 @media screen and (max-width: 300px) and (orientation:portrait) {
     label.day-night-switch {

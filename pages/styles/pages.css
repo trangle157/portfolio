@@ -21,15 +21,37 @@ article {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 60%;
+    width: 80%;
+    margin-bottom: 1rem;
 }
 
 article.expandable>details {
     width: 100%;
 }
 
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    font-size: 1rem;
+}
+
 summary {
     flex-direction: row;
+}
+
+ol {
+    margin-top: 0;
+}
+
+.title {
+    margin-block: 3rem;
+    margin-inline: 0.5rem;
 }
 
 .section {
@@ -38,8 +60,13 @@ summary {
     font-size: 20px;
 }
 
+.section details {
+    margin-bottom: 2rem;
+}
+
 .section p {
     margin: 0;
+    margin-bottom: 2rem;
 }
 
 .dropdown {
@@ -47,15 +74,25 @@ summary {
     justify-content: flex-end;
 }
 
-input[type=checkbox]:checked+.dropdown {
-    display: none;
-}
-
 h2 {
     margin: 0;
 }
 
+.subsection-name {
+    margin: 0;
+}
+
+.img-md {
+    width: 50%;
+}
+
 @media all and (max-width: 900px) {
+    .top-logo {
+        display: block;
+        left: 0px;
+        position: relative;
+    }
+
     article {
         flex-direction: column;
         justify-content: center;
@@ -75,6 +112,10 @@ h2 {
     }
 
     p {
+        width: 100%;
+    }
+
+    .img-md {
         width: 100%;
     }
 }

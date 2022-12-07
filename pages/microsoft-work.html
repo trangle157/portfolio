@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work at Microsoft</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="styles/pages.css">
+    <link rel="stylesheet" href="https://use.typekit.net/dxs1dwy.css">
+</head>
+
+<body>
+    <input type="checkbox" id="day-night-switch">
+    <label for="day-night-switch" class="day-night-switch"></label>
+    <nav class="nav-bar">
+        <button class="menu-bttn">
+            <svg id="menu-bttn-flower" width="50px" height="50px" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="lotus">
+                    <g id="flower-petal-left">
+                        <path d="M 10 4 C 4 6, 4 16, 10 18" stroke-width="0.25px" transform="rotate(-20, 10, 18)">
+                        </path>
+                        <path d="M 10 4 C 16 6, 16 16, 10 18" stroke-width="0.5px" transform="rotate(-20, 10, 18)">
+                        </path>
+                    </g>
+                    <g id="flower-petal">
+                        <path d="M 10 4 C 4 6, 4 16, 10 18" stroke-width="0.25px"></path>
+                        <path d="M 10 4 C 16 6, 16 16, 10 18" stroke-width="0.5px">
+                        </path>
+                    </g>
+                    <g id="flower-petal-right">
+                        <path d="M 10 4 C 4 6, 4 16, 10 18" stroke-width="0.45px" transform="rotate(20, 10, 18)">
+                        </path>
+                        <path d="M 10 4 C 16 6, 16 16, 10 18" stroke-width="0.3px" transform="rotate(20, 10, 18)">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+        </button>
+        <ul class="main-items">
+            <li class="page-title"><a href="../index.html" style="color: #E98ECF">UX</a></li>
+            <li class="page-title"><a href="pages/art.html">Art</a></li>
+            <li class="page-title"><a href="about.html">About</a></li>
+            <li class="page-title"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Microsoft Docs</h1>
+        <article>
+            <h2 class="section-name">
+                Summary
+            </h2>
+            <div class="section">
+                <p>
+                    During the time at <a href="https://learn.microsoft.com">learn.microsoft.com</a>, I am lucky to have
+                    worked on various projects with the Identity Team to improve the learning experience on Microsoft's
+                    official documentation
+                    site, collaborating within Docs Engineering team and integrating <a
+                        href="https://design.learn.microsoft.com/">Atlas
+                        Design</a> into the new UIs.
+                </p>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="section-name">
+                Token service refactor
+            </h2>
+            <div class="section">
+                <p>The project aims to let users try out the Azure APIs within a sandbox environment on learn. <a
+                        href="https://learn.microsoft.com/en-us/rest/api/compute/disks/create-or-update?tabs=HTTP"></a>focuses
+                    on the user sign in flow, authentication scenarios for users with different
+                    Azure
+                    subscriptions and identity.</p>
+                <p>The challenge of the project was to make sure different scenarios are tested and tackled carefully,
+                    avoiding any infinite login redirection and testing the UI scenarios with Jest.</p>
+                <p>Responsiveness and themes is also taken care of in collaboration with the designer to ensure
+                    pixel-perfect
+                    modals, margins and reusable front-end code.</p>
+                <figure>
+                    <img src="../assets/ms/sign in.JPG" />
+                    <figcaption>Sign in screen when user is not logged in to <a
+                            href="https://learn.microsoft.com">learn.microsoft.com</a></figcaption>
+                </figure>
+                <br>
+                <br>
+                <figure>
+                    <img src="../assets/ms/no subscription.JPG" />
+                    <figcaption>Scenario: user doesn't have subscription or a free trial in Azure </figcaption>
+                </figure>
+                <br>
+                <br>
+                <figure>
+                    <img src="../assets/ms/tryit.JPG" />
+                    <figcaption>Scenario: when users are already signed into Learn (formerly Docs)</figcaption>
+                </figure>
+                <br>
+                <br>
+                <figure>
+                    <img src="../assets/ms/mobile-tenant-text-justified.PNG" />
+                    <figcaption>Scenario: users' Azure subscription have several tenants. Users can still switch
+                        account before finalizing and using the sandbox (mobile view)</figcaption>
+                </figure>
+                <br>
+                <br>
+                <figure>
+                    <img src="../assets/ms/dark-theme-azure.png" />
+                    <figcaption>Dark theme</figcaption>
+                </figure>
+                <br>
+                <br>
+                <figure>
+                    <img class="img-md" src="../assets/ms/mobile-try-it-dark.png" />
+                    <figcaption>Mobile view</figcaption>
+                </figure>
+            </div>
+        </article>
+
+        <!--<article>
+            <h2 class="section-name">Achievement and Learning</h2>
+            <div class="section"></div>
+        </article>-->
+
+        <article>
+            <h2 class="section-name">
+                Key things I learned
+            </h2>
+            <div class="section">
+                <p>
+                    My experience at Microsoft is definitely valuable. I got to work with talented and pleasant
+                    colleagues while also contributed to projects that created impact on the users and their learning
+                    experience.
+                </p>
+                <ul>
+                    <li>
+                        The importance of communicating, asking questions and caring about your users. I actively talked
+                        to the designers, PMs and backend engineers to understand more thoroughly about the projects and
+                        the
+                        targeted
+                        users. I also utilized any UX/UI principles I usability, accessibility, and align
+                        with our business goals.
+                    </li>
+                    <br>
+                    <li>Working with designers and UX engineers on negotiating between the designer's aesthetics and
+                        design system
+                        utilization.
+                    </li>
+                    <br>
+                    <li>
+                        Working with the backend team on API testing, validating endpoints and work with different
+                        authentication scenarios.
+                    </li>
+                    <br>
+                    <li>
+                        Accessibility. As Microsoft values accessibility in all shipped products, the UI has to be
+                        tested
+                        to match the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG guidelines</a>.
+                        <br>
+                        <br>
+                        Accessibility has long been my interest, so I worked to push the products forward to inclusive
+                        design in
+                        any
+                        way I could. Working with any team and company that deeply care about accessibility is a
+                        wonderful collaboration.
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+    </main>
+    <footer>Copyright &copy; Trang Le <time id="date-time-footer"></time></footer>
+    <script src="../index.js"></script>
+</body>
+
+</html>

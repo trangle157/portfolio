@@ -31,11 +31,20 @@ if (dayLightButton.checked) {
     docBody.classList.add('night');
 }
 
+if (localStorage.getItem("theme") === "dark") {
+    docBody.classList.add('night');
+    dayLightButton.setAttribute("checked", "true");
+} else {
+    docBody.classList.remove('night');
+}
+
 dayLightButton.addEventListener('change', () => {
     if (dayLightButton.checked) {
         docBody.classList.add('night');
+        localStorage.setItem("theme", "dark");
     } else {
         docBody.classList.remove('night');
+        localStorage.setItem("theme", "light");
     }
 })
 

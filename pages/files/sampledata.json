@@ -1,0 +1,64 @@
+{
+    "id": "062ac5a1-98ca-4adc-b69b-55edad27ae9c",
+    "modelId": "FastAI",
+    "audioUri": "https://livemlaudiospecstorage.blob.core.windows.net/audiowavs/rpi_bush_point_2021_08_16_17_10_45_PDT.wav",
+    "imageUri": "https://livemlaudiospecstorage.blob.core.windows.net/spectrogramspng/rpi_bush_point_2021_08_16_17_10_45_PDT.png",
+    "reviewed": true,
+    "timestamp": "2021-08-17T00:10:45.420758Z",
+    "whaleFoundConfidence": 73.65523601571718,
+    "location": {
+        "id": "rpi_bush_point",
+        "name": "Bush Point",
+        "longitude": -122.6039,
+        "latitude": 48.03371
+    },
+    "source_guid": "rpi_bush_point",
+    "predictions": [
+        {
+            "id": 0,
+            "startTime": 13.220338983050848,
+            "duration": 1.0169491525423728,
+            "confidence": 0.6169976443052292
+        },
+        {
+            "id": 1,
+            "startTime": 31.525423728813557,
+            "duration": 1.0169491525423728,
+            "confidence": 0.7918757498264313
+        },
+        {
+            "id": 2,
+            "startTime": 32.54237288135593,
+            "duration": 1.0169491525423728,
+            "confidence": 0.6403099000453949
+        },
+        {
+            "id": 3,
+            "startTime": 35.59322033898305,
+            "duration": 1.0169491525423728,
+            "confidence": 0.7602437138557434
+        },
+        {
+            "id": 4,
+            "startTime": 53.89830508474576,
+            "duration": 1.0169491525423728,
+            "confidence": 0.7879835963249207
+        },
+        {
+            "id": 5,
+            "startTime": 54.91525423728813,
+            "duration": 1.0169491525423728,
+            "confidence": 0.8219035565853119
+        }
+    ],
+    "_rid": "cp0tAOsNIHfCDAAAAAAAAA==",
+    "_self": "dbs/cp0tAA==/colls/cp0tAOsNIHc=/docs/cp0tAOsNIHfCDAAAAAAAAA==/",
+    "_etag": "\"6300162d-0000-0800-0000-611b0c9d0000\"",
+    "_attachments": "attachments/",
+    "SRKWFound": "no",
+    "comments": "sea bird",
+    "dateModerated": "2021-08-17T01:10:52Z",
+    "moderator": "live.com#dbaing17@gmail.com",
+    "tags": "",
+    "_ts": 1629162653
+}

@@ -1,0 +1,33 @@
+main .art-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: var(--body-text);
+}
+
+.art.section {
+    font-size: 20px;
+    text-align: center;
+    width: 90;
+}
+
+figure {
+    width: 80%;
+}
+
+.drawings {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-block: 2rem;
+}
+
+.drawings figure {
+    width: 40%;
+    margin-inline: 2rem;
+}
+
+@media screen and (max-width: 900px) {}

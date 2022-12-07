@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="styles/pages.css">
+    <link rel="stylesheet" href="https://use.typekit.net/dxs1dwy.css">
+</head>
+
+<body>
+    <div class="top-logo">
+        <a href="../index.html">
+            <img src="../assets/Trang_Pilogo.png">
+        </a>
+    </div>
+    <input type="checkbox" id="day-night-switch">
+    <label for="day-night-switch" class="day-night-switch"></label>
+    <nav class="nav-bar">
+        <button class="menu-bttn">
+            <svg id="menu-bttn-flower" width="50px" height="50px" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="lotus">
+                    <g id="flower-petal-left">
+                        <path d="M 10 4 C 4 6, 4 16, 10 18" stroke-width="0.25px" transform="rotate(-20, 10, 18)">
+                        </path>
+                        <path d="M 10 4 C 16 6, 16 16, 10 18" stroke-width="0.5px" transform="rotate(-20, 10, 18)">
+                        </path>
+                    </g>
+                    <g id="flower-petal">
+                        <path d="M 10 4 C 4 6, 4 16, 10 18" stroke-width="0.25px"></path>
+                        <path d="M 10 4 C 16 6, 16 16, 10 18" stroke-width="0.5px">
+                        </path>
+                    </g>
+                    <g id="flower-petal-right">
+                        <path d="M 10 4 C 4 6, 4 16, 10 18" stroke-width="0.45px" transform="rotate(20, 10, 18)"></path>
+                        <path d="M 10 4 C 16 6, 16 16, 10 18" stroke-width="0.3px" transform="rotate(20, 10, 18)">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+        </button>
+        <ul class="main-items">
+            <li class="page-title"><a href="../index.html" style="color: #E98ECF">UX</a></li>
+            <li class="page-title"><a href="art.html">Art</a></li>
+            <li class="page-title"><a href="about.html">About</a></li>
+            <li class="page-title"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    <main>
+        <h1 class="title">Orcasound Data in D3.js (Ongoing Project)</h1>
+        <a href="https://github.com/trangle157/visualization-orca"><img id="github-top"
+                src="../assets/github-mark.svg"></a>
+        <article>
+            <h2 class="section-name">Executive Summary</h2>
+            <div class="section">
+                <p>
+                    The project is an open-source/volunteer project for
+                    <a href="https://www.orcasound.net/">
+                        Orcasound
+                    </a>, a volunteer group/nonprofit based in Washington.
+                </p>
+
+                <p>
+                    Using the <a href="https://github.com/orcasound/orcadata/wiki/Data-visualization-opportunities">raw
+                        JSON
+                        data</a>, I have been collaborating with the group and Dr. Scott Veirs to visualize the
+                    temporal data coming from hydrophones that show whale or biomarine sound detections.
+
+                    A datapoint looks like <a href="files/sampledata.json">this</a>
+                </p>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="section-name">Goals and Challenges</h2>
+            <div class="section">
+                <p>
+                    The challenges of working with temporal data is to visualize the 60 second interval in a way that
+                    help users see patterns without overlapping the data points and creating a complex visual.
+                </p>
+
+                <p>
+                    This plot shows the complexity of having the 60 second interval plotted throughout the months. As
+                    the timestamp in the dataset is accurate to miliseconds, plotting all observation adds up really
+                    quick.
+                </p>
+                <figure>
+                    <img src="../assets/orcadata.png" />
+                </figure>
+                <p>
+                    Our goal is to see the seasonal patterns of whale sounds and detection of pigeon sound to
+                    distinguish it from whale's.
+                </p>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="section-name">Approach</h2>
+            <div class="section">
+                <p>At first, my approach was to design the 60 second interval so that user can see its progression over
+                    time. I chose the round datapoint so users can see on the vertical axis without the point stacking
+                    up in the case of a triangle datapoint
+                </p>
+
+                <img src="../assets/rect-datapoint.png" />
+
+                <p>For confidence level, currently I used colors with scale from red to green as confidence level
+                    increase.</p>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="section-name">Demo & code</h2>
+            <div class="section">
+                <p>
+                    Currently, we are iterating on the <a
+                        href="https://trangle157.github.io/visualization-orca/">initial
+                        mockup
+                    </a>
+                </p>
+
+            </div>
+        </article>
+        <script src="../index.js"></script>
+</body>
+
+</html>
