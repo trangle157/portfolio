@@ -49,6 +49,10 @@ ol {
     margin-top: 0;
 }
 
+a {
+    text-align: center;
+}
+
 .title {
     margin-block: 3rem;
     margin-inline: 0.5rem;

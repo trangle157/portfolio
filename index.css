@@ -121,7 +121,7 @@ label.day-night-switch:after {
     border-radius: 50%;
 }
 
-input:checked+label {
+input:checked~label {
     background-color: var(--wisteria-purple);
     justify-content: flex-end;
 }
