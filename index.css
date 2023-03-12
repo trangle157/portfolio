@@ -165,6 +165,11 @@ input:checked~label {
     background-color: transparent;
 }
 
+.img-group {
+    display: flex;
+    flex-direction: column;
+}
+
 #banner {
     width: 100%;
 }
@@ -193,6 +198,10 @@ g#lotus path {
     section.project-card {
         width: 40vw;
         height: 30vw;
+    }
+
+    .img-group {
+        flex-direction: row;
     }
 
     .menu-bttn {
