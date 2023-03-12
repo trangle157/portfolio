@@ -1,3 +1,7 @@
+header {
+    text-align: center;
+}
+
 .top-logo {
     width: 8em;
     position: absolute;
@@ -8,6 +12,8 @@
 .section-name {
     width: 30%;
     overflow-wrap: break-word;
+    position: sticky;
+    top: 1rem;
 }
 
 main {
@@ -22,11 +28,15 @@ article {
     justify-content: space-between;
     align-items: flex-start;
     width: 80%;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 article.expandable>details {
     width: 100%;
+}
+
+p+details {
+    margin-block: 1rem;
 }
 
 figure {
@@ -41,12 +51,13 @@ figcaption {
     font-size: 1rem;
 }
 
-summary {
-    flex-direction: row;
+ol,
+ul {
+    margin-block: 0;
 }
 
-ol {
-    margin-top: 0;
+nav ul {
+    margin-block: 2rem;
 }
 
 a {
@@ -64,13 +75,16 @@ a {
     font-size: 20px;
 }
 
-.section details {
-    margin-bottom: 2rem;
+.section p,
+li {
+    margin: 0;
+    max-width: 80%;
+    line-height: 2rem;
 }
 
-.section p {
-    margin: 0;
-    margin-bottom: 2rem;
+code {
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
 }
 
 .dropdown {
@@ -90,6 +104,14 @@ h2 {
     width: 50%;
 }
 
+.img-group {
+    display: flex;
+}
+
+.highlight {
+    color: orange;
+}
+
 @media all and (max-width: 900px) {
     .top-logo {
         display: block;
@@ -105,6 +127,7 @@ h2 {
     .section-name {
         width: 100%;
         text-align: center;
+        position: relative;
     }
 
     .section {
@@ -115,8 +138,9 @@ h2 {
         margin: 1.4rem 0;
     }
 
-    p {
+    .section p {
         width: 100%;
+        max-width: 100%;
     }
 
     .img-md {

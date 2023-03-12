@@ -76,8 +76,16 @@ body.night {
     --body-text: white;
 }
 
-#day-night-switch {
-    display: none;
+input#day-night-switch {
+    clip-path: inset(50%);
+}
+
+body.night input#day-night-switch:focus+label {
+    border: 3px solid white;
+}
+
+input#day-night-switch:focus+label {
+    border: 3px solid #1C2E40;
 }
 
 label.day-night-switch {

@@ -1,20 +1,30 @@
-main .art-grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: var(--body-text);
+/*.art-grid {
+    margin-inline: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 300px 1fr;
+    grid-template-areas:
+        "photo-x photo-y photo-x"
+        "photo-x photo-y"
+        "photo-x photo-x";
 }
 
-.art.section {
+.section.art {
     font-size: 20px;
     text-align: center;
     width: 90;
+    margin-bottom: 2rem;
 }
 
 figure {
-    width: 80%;
+    width: 70%;
+}
+.photo-x {
+    grid-area: photo-x;
+}
+
+.photo-y {
+    grid-area: photo-y;
 }
 
 .drawings {
@@ -30,4 +40,15 @@ figure {
     margin-inline: 2rem;
 }
 
-@media screen and (max-width: 900px) {}
+@media screen and (max-width: 900px) {}*/
+
+figure {
+    width: 80%;
+    margin-block: 2rem;
+}
+
+.art-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
