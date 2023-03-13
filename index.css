@@ -190,6 +190,10 @@ g#lotus path {
     stroke: var(--line-stroke);
 }
 
+a.current {
+    color: #E98ECF;
+}
+
 @media screen and (min-width: 768px) {
     #banner {
         width: 60%;

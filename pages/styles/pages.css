@@ -82,6 +82,11 @@ li {
     line-height: 2rem;
 }
 
+.section.art p {
+    max-width: 100%;
+    text-align: center;
+}
+
 code {
     overflow-wrap: break-word;
     white-space: pre-wrap;
@@ -104,12 +109,18 @@ h2 {
     width: 50%;
 }
 
-.img-group {
-    display: flex;
-}
-
 .highlight {
     color: orange;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    margin-inline: 2rem;
+}
+
+.profile .section {
+    padding-inline: 1rem;
 }
 
 @media all and (max-width: 900px) {
