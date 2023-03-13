@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang's Portfolio</title>
+    <title>Trang's UX/UI Portfolio - Data Visualization and Accessibility</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://use.typekit.net/dxs1dwy.css">
     <link rel="stylesheet" href="https://unpkg.com/browse/@microsoft/atlas-css/">
 </head>
 
 <body>
-    <img id="banner" src="assets/header_smol.png">
+    <header>
+        <img id="banner" src="assets/header_smol.png">
+        <div tabindex="0" id="theme-switch">
+            <input type="checkbox" id="day-night-switch">
+            <label for="day-night-switch" class="day-night-switch"></label>
+        </div>
+    </header>
 
-    <div tabindex="0" id="theme-switch">
-        <input type="checkbox" id="day-night-switch">
-        <label for="day-night-switch" class="day-night-switch"></label>
-    </div>
 
     <nav class="nav-bar">
         <button class="menu-bttn">
