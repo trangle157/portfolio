@@ -25,6 +25,7 @@ footer {
     color: var(--body-text);
     font-size: 1rem;
     padding-block: 2rem;
+    text-align: center;
 }
 
 @keyframes fadeInAnimation {
