@@ -50,4 +50,4 @@ dayLightButton.addEventListener('change', () => {
 
 const dateTimeField = document.querySelector("#date-time-footer")
 
-dateTimeField.innerHTML = new Date().getFullYear()
+dateTimeField.textContent = new Date().getFullYear()
