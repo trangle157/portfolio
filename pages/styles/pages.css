@@ -78,7 +78,7 @@ a {
 .section p,
 li {
     margin: 0;
-    max-width: 80%;
+    max-width: 700px;
     line-height: 1.8em;
 }
 
