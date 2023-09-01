@@ -123,6 +123,10 @@ h2 {
     padding-inline: 1rem;
 }
 
+.image img {
+    width: 100% !important;
+}
+
 @media all and (max-width: 900px) {
     .top-logo {
         display: block;
