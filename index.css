@@ -53,15 +53,31 @@ main {
 section.project-card {
     width: 70vw;
     height: 60vw;
-    background-color: gray;
+    background-color: green;
     margin: 1vw;
     margin-top: 4vw;
+    position: relative;
 }
 
-.project-card img {
+.project-card img.project-card-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.project-card-img:hover {
+    opacity: 0.3;
+}
+
+.project-name {
+    opacity: 0;
+}
+
+.project-card:hover .project-name {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    opacity: 1;
 }
 
 .page-title>a {
