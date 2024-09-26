@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang's project - CPU Visualization</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="styles/pages.css">
+    <link rel="stylesheet" href="https://use.typekit.net/dxs1dwy.css">
+</head>
+
+<body>
+    <div class="top-logo">
+        <a href="../index.html">
+            <img src="../assets/Trang_Pilogo.png">
+        </a>
+    </div>
+    <input type="checkbox" id="day-night-switch">
+    <label for="day-night-switch" class="day-night-switch"></label>
+    <nav class="nav-bar">
+        <button class="menu-bttn">
+            <svg id="menu-bttn-flower" width="50px" height="50px" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="lotus">
+                    <g id="flower-petal-left">
+                        <path d="M 10 4 C 4 6, 4 16, 10 18" stroke-width="0.25px" transform="rotate(-20, 10, 18)">
+                        </path>
+                        <path d="M 10 4 C 16 6, 16 16, 10 18" stroke-width="0.5px" transform="rotate(-20, 10, 18)">
+                        </path>
+                    </g>
+                    <g id="flower-petal">
+                        <path d="M 10 4 C 4 6, 4 16, 10 18" stroke-width="0.25px"></path>
+                        <path d="M 10 4 C 16 6, 16 16, 10 18" stroke-width="0.5px">
+                        </path>
+                    </g>
+                    <g id="flower-petal-right">
+                        <path d="M 10 4 C 4 6, 4 16, 10 18" stroke-width="0.45px" transform="rotate(20, 10, 18)"></path>
+                        <path d="M 10 4 C 16 6, 16 16, 10 18" stroke-width="0.3px" transform="rotate(20, 10, 18)">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+        </button>
+        <ul class="main-items">
+            <li class="page-title"><a href="../index.html" style="color: #E98ECF">UX</a></li>
+            <li class="page-title"><a href="art.html">Art</a></li>
+            <li class="page-title"><a href="about.html">About</a></li>
+            <li class="page-title"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 tabindex="0" class="title">PC Build Visualization</h1>
+        <a href="https://github.com/trangle157/DataViz-Proj">
+            <img id="github-top" src="../assets/github-mark.svg">
+        </a>
+        <article>
+            <h2 class="section-name">Executive Summary</h2>
+            <div class="section">
+                <p>
+                    Building my first PC in 2020 (incentivized to play more Dota and Valorant) taught me how
+                    overwhelming and rewarding buiding your first computer is. Choosing the right component, price, and
+                    configurations for your needs is non-trivial, especially for first time builder like myself. The
+                    experience sparked in me an idea of a PC build visualization to come to aid PC builders, from novice
+                    to enthusiasts.
+                </p>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="section-name">Fun fact</h2>
+            <details class="section">
+                <summary>
+                    <span>Read more</span>
+                </summary>
+                Each fall, Intel launches a new processor
+                model in
+                the “TickTock” mechanism: a shrinking in processor’s size or introducing a new processor.
+                That’s
+                a
+                lot models to compare and contrast.
+            </details>
+        </article>
+
+        <article>
+            <h2 class="section-name">Data</h2>
+            <div class="section">
+                <p>
+                    The data is scraped from from <a href="http://UserBenchmark.com">UserBenchmark.com</a>, and while
+                    the data was
+                    debated by many on its accuracy, having a 1K observation dataset would be a good material for a
+                    visualization for future visualizer to base off of.
+                </p>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="section-name">Users</h2>
+            <div class="section">
+                <p>
+                    The visualization aims to help different PC builders to choose the right parts and decide whether an
+                    upgrade of worthy of price increase
+                    (coding, graphic design…), gaming, and desktop (aka light office use). We focus
+                    on the price and performance of each build and figure out a UI/data point design to make comparison
+                    easy.
+                </p>
+            </div>
+        </article>
+
+
+        <article>
+            <h2 id="db2321ad-b72d-4c6f-a6ea-42d2e3cb8580" class="section-name">Approach</h2>
+            <div id="de57e1a4-a73d-411c-b339-eaf2be93d2dd" class="section">
+                <p>Experimenting with
+                    different
+                    visualization tools and design choices give us a quick glance at the dataset and the visual types
+                    that will be suitable.
+                    Through each iteration, the data
+                    point
+                    is
+                    re-designed for a better approach that caters to the users’ goal: being able to compare among
+                    different builds. The exploration steps are:
+                <ul>
+                    <li>
+                        Tableau for quick, exploratory viz to gauge a sense of the data
+                    </li>
+                    <li style="list-style-type:disc">Python seaborn for more processing and explored with heatmap</li>
+                    <li>Used sketching and R Studio to explore with chord diagram</li>
+                    <li style="list-style-type:disc">
+                        Finally, I
+                        gathered
+                        the
+                        pros and cons of the previous viz, talked to another dataviz expert, read books, and
+                        resketched, wireframed and implemented the interactive visualization with Figma and D3.js
+                    </li>
+                </ul>
+                </p>
+        </article>
+
+
+        <article>
+            <h2 class="section-name">Exploratory Visualization with Tableau</h2>
+            <div class="section">
+                <h3 class="subsection-name">A brief walk down Tableau</h3>
+                <p>
+                    My first thought is to use Tableau for a quick turnaround. Tableau let me quickly explore how the
+                    viz looks with
+                    scatterplot, treemap and heatmap. We will observe how each chart type is fitting for our goal to
+                    make model comparison easy.
+                </p>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="section-name">Scatterplot</h2>
+            <div class="section">
+                <img src="../assets/scatterplot.gif">
+                <p>The scatterplot has an advantage that it puts the CPU and GPU next to each other, and allow us to
+                    plot 2 types of ratings (so 2 numerical + 2 categorical variables). The names being sorted are also
+                    very convenient, since users can see the marginal performance increase of each combo (and at time,
+                    regression,
+                    that
+                    using a more modern piece doesn't necessarily improve performance)</p>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="section-name">Heatmap</h2>
+            <div class="section">
+                <img src="../assets/heatmap.png" width="700px">
+                <p>The heatmap is great on highlighting the
+                    rating
+                    differences as numbers are juxtaposed, but the eye movement to trace from the rating to the
+                    parts’
+                    names
+                    vertically and horizontally can be extra cognitive load on the users.</p>
+                <p>Both of these plots have values to add to the
+                    final
+                    design: while the scatterplot enhances pairing by having the part names next to each other, the
+                    heatmap
+                    has the numerical data side-by-side. I thought of enhancing the pairing design with chord
+                    diagram,
+                    but
+                    while it’s a cool type of chart, the cognitive load to match pair to pair will also not be
+                    suitable
+                    for
+                    our purpose.</p>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="section-name">Iteration with chord diagram in RStudio</h2>
+            <div class="section">
+                <img src="../assets/chorddiag.jpg" width="100%" />
+                <p>
+                    Besides visualizing rating, I thought it might be helpful to users to have a general suggestion
+                    chart that shows the most commonly used GPU-CPU pairs.
+                    Chord diagram as this type of chart is great for bipartite and directional relationships. However,
+                    this type of chart gets tangled up quickly, so
+                    limiting the number of relationships to display or allow users to switch in/out the pairs might
+                    reduce the visual complexity.
+                </p>
+                <p>The <a href="./exploreData.html">demo</a> is done in R using dplyr package and chorddiag package for
+                    visualization.</p>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="section-name">Redesign with Figma and D3.js</h2>
+            <div class="section">
+                <p>
+                    In the last iteration of the visualization, I aim to strengthen the UI pros and cons learned from
+                    previous visualizations. To make comparison easier, I thought of a simple idea in Mathematics: the
+                    rate of increase is depicted by the slope between two datapoints:
+                </p>
+                <figure>
+                    <img src="../assets/Comparison.jpg" />
+                    <figcaption>
+                        sketches to explore how to see price/performance increase with each builders
+                    </figcaption>
+                </figure>
+                <br>
+                <p>
+                    The next step was to design a datapoint that reflects a combination of CPU-GPU. Using
+                    two circles with different radius to reflect rating would work, however, the datapoint's components
+                    looks a bit detached from each other, and making a full circle might not be necessary.
+                <figure>
+                    <img src="../assets/Data_Juxtaposed.jpg" />
+                    <figcaption>
+
+                    </figcaption>
+                </figure>
+                <br>
+                I utilized the Gestalt principle of proximity (that objects positioned close are associated with
+                each other), and decided to reduce the circle by half to save space and increase association of each
+                build.
+                <figure>
+                    <img src="../assets/CPU_GPU_UI.png" />
+                    <figcaption>
+                        Prototype in Figma.
+                    </figcaption>
+                </figure>
+                </p>
+                <a target="blank"
+                    href="https://www.figma.com/proto/imZFWExz608cybFSAtERWn/CPU%2FGPU-Data?page-id=0%3A1&node-id=1792%3A195&viewport=-2018%2C-2653%2C0.34&scaling=scale-down&starting-point-node-id=1792%3A195&show-proto-sidebar=1">
+                    Wireframe in Figma</a>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="section-name">Design system</h2>
+            <div class="section">
+                <p>For the look and feel of the dashboard, I decided to use more "airy," digital-looking font to match
+                    the
+                    theme. For colors, of each data point, I use the brand colors of manufacturers with some curation
+                    (e.g.
+                    choosing among several colors used by the brand) to
+                    provide better contrast.
+                </p>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="section-name">Final produt</h2>
+            <div class="section">
+                <p>Play with <a href="https://trangle157.github.io/DataViz-Proj/">the final product</a> here. After
+                    fully
+                    visualizing the dataset, I added the zoom feature as the datapoints can be very close to each other,
+                    unlike
+                    in our simplified version from the design.</p>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="section-name">For iterations</h2>
+            <div class="section">
+                <p>The current UI/Dashboard still needs refreshing whenever the viewport changes (i.e. when users resize
+                    the
+                    browser window). One possible way to tackle this is either to refactor the project to React and use
+                    useRef to modify the svg dashboard's dimensions and scales, but also possibly to just add an event
+                    listener to the window with javascript and redo the scale accordingly.
+                </p>
+            </div>
+        </article>
+
+    </main>
+    <footer>Copyright &copy; Trang Le <time id="date-time-footer"></time></footer>
+    <script src="../index.js"></script>
+</body>
+
+</html>
