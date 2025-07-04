@@ -10,6 +10,19 @@ body {
     --header-text: #544F54;
     transition: all 500ms ease;
     font-family: soleil, sans-serif;
+    padding: 5rem;
+}
+
+/* for later when I want to change to the new design */
+
+/* .body {
+    display: flex;
+} */
+
+@media screen and (min-width: 684px) {
+/*     .nav-area {
+        width: 40%;
+    } */
 }
 
 header {
@@ -53,7 +66,6 @@ main {
 section.project-card {
     width: 70vw;
     height: 60vw;
-    background-color: green;
     margin: 1vw;
     margin-top: 4vw;
     position: relative;
@@ -62,6 +74,7 @@ section.project-card {
 .project-card img.project-card-img {
     height: 100%;
     width: 100%;
+    position: absolute;
     object-fit: cover;
 }
 
@@ -74,10 +87,12 @@ section.project-card {
 }
 
 .project-card:hover .project-name {
-    position: absolute;
-    top: 40%;
-    left: 45%;
     opacity: 1;
+    background-color: gray;
+    border-radius: 0.25rem;
+    position: absolute;
+    margin: auto;
+    top: 0;
 }
 
 .page-title>a {
@@ -158,25 +173,27 @@ input:checked~label {
 .nav-bar {
     list-style-type: none;
     padding-left: 0px;
-    display: flex;
-    /*border: 1px solid;*/
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: var(--header-text);
     font-family: soleil, sans-serif;
     font-weight: 300;
     font-style: normal;
+    display: flex;
+    justify-content: center;
 }
 
 .main-items {
+    list-style-type: none;
     display: none;
 }
 
+@media screen and (min-width: 768px) {
+    ul.main-items {
+        display: flex;
+    }
+}
+
 .page-title {
-    display: inline-block;
     font-size: 20px;
-    padding: 0px 50px;
 }
 
 .menu-bttn {
@@ -200,8 +217,6 @@ input:checked~label {
 }
 
 .main-items.open {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -235,7 +250,7 @@ a.current {
 
     .main-items,
     .main-items.open {
-        /*width: 50vw;*/
+        width: 50vw;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
